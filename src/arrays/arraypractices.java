@@ -23,7 +23,7 @@ public class arraypractices {
     }
 
 
-    // what so worng in this code ??
+    static void mistake() {  // what so worng in this code ??
 //    static void Question3ReversArray (int[] arr){
 //        for (int i = 0; i < arr.length; i++) {
 //            int temp = arr[i];
@@ -32,9 +32,9 @@ public class arraypractices {
 //        }
 //        System.out.println(Arrays.toString(arr));
 //    }
-    // Answer : Data loss while swaping
-    //arr[i]=arr[(arr.length-1)-i] is this correct
-
+      // Answer : Data loss while swaping
+      //arr[i]=arr[(arr.length-1)-i] is this correct
+  }
 
 static void Question3ReversArray (int[] arr){
         int start =0;
@@ -50,11 +50,17 @@ static void Question3ReversArray (int[] arr){
 }
 
 
+static void Question4ReturnMostfrequent(int[] arr, int k){
+
+}
+
+
+
     public static void main(String[] args) {
 //            Question1Swaping(arr,1,3);
 //            Question2Max(arr);
 //        System.out.println(Arrays.toString(arr));
-        Question3ReversArray(arr);
+//        Question3ReversArray(arr);
 
     }
 }
