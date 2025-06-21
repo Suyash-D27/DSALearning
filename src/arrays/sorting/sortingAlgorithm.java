@@ -42,7 +42,7 @@ public class sortingAlgorithm {
 
 
             // find the max item in the remaing array and swap it with correct index
-            int last = arr.length-i- 1;
+            int last = arr.length-i-1;
             int max = getmaxindex(arr,0,last);
 
             swap(arr,max,last);
@@ -56,11 +56,11 @@ public class sortingAlgorithm {
       arr[second]=temp;
     }
 
-    private static int getmaxindex(int[] arr, int start, int end) {
+     static int getmaxindex(int[] arr, int start, int end) {
         int max = start;
-        for (int i = start; i <=end ; i++) {
-            if(arr[max]<arr[i]) {
-                return max=i;
+        for (int j = start; j <=end ; j++) {
+            if(arr[max]<arr[j]) {
+                 max=j;
             }
         }
 
