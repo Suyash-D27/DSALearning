@@ -1,5 +1,6 @@
 package arrays.sorting;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class sortingAlgorithm {
@@ -9,7 +10,9 @@ public class sortingAlgorithm {
 //          selectionSort(arr);
         insertionsort(arr);
         System.out.println(Arrays.toString(arr));
-
+        int [] arr2={1,2,6,3,5,9,4,8,7,10};
+            cyclicSort(arr2);
+        System.out.println(Arrays.toString(arr2));
 
     }
 
@@ -77,4 +80,17 @@ public class sortingAlgorithm {
             }
         }
     }
+
+    static void cyclicSort(int[]arr){
+        int i=0;
+        while (i<arr.length){
+            int correct = arr[i]-1;
+            if(arr[correct]!=arr[i]){
+                swap(arr,i,correct);
+            }else {
+                i++;
+            }
+        }
+    }
+
 }
