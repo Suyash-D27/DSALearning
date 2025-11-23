@@ -1,6 +1,5 @@
-package leetcodeproblems;
+package leetcodeproblemsSuyash;
 
-import java.sql.Array;
 import java.util.Arrays;
 
 public class Question4 {

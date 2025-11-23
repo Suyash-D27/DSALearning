@@ -1,4 +1,4 @@
-package leetcodeproblems;
+package leetcodeproblemsSuyash;
 
 import java.util.ArrayList;
 import java.util.Collections;

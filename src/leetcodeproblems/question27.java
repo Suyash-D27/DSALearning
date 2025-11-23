@@ -1,4 +1,4 @@
-package leetcodeproblems;
+package leetcodeproblemsSuyash;
 
 public class question27 {
     public static void main(String[] args) {

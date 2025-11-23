@@ -1,7 +1,6 @@
-package leetcodeproblems;
+package leetcodeproblemsSuyash;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class question17 {
     public static void main(String[] args) {
