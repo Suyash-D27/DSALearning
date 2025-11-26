@@ -3,7 +3,7 @@ package leetcodeproblemsSuyash;
 public class Qusetion121 {
     public static void main(String[] args) {
         int[] nums= {1,2,3,2,1};
-        System.out.println(maxProfit(nums));
+        System.out.println(sol(nums));
 
     }
         public static int maxProfit(int[] prices) {
@@ -16,6 +16,29 @@ public class Qusetion121 {
                 maxprofit = Math.max(profit,maxprofit);
             }
             return maxprofit;
+        }
+
+        public static int sol(int [] nums){
+
+        int Maxprofit = 0;
+        int currentpro = Integer.MIN_VALUE;
+        int n= nums.length;
+        if(n<2) return 0;
+        int s= 0;
+        int e=1;
+
+        while (e<n){
+
+            currentpro = nums[e]-nums[s];
+
+            if(nums[e]<nums[s]){
+                s=e;
+            }
+                Maxprofit = Math.max(Maxprofit, currentpro);
+
+            e++;
+        }
+        return Maxprofit;
         }
 
 }
