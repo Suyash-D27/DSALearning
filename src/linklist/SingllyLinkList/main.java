@@ -15,7 +15,7 @@ public class main {
         System.out.println(list.deleteLast());
         list.display();
         System.out.println(list.delete(2));
-
+        list.insertRec(33,2);
 
         list.display();
     }
