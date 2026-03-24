@@ -233,7 +233,7 @@ public class bfs {
         return (level(root,xx,0) == level(root,yy,0) && !isSibling(root,xx,yy));
     }
 
-    private boolean isSibling(,TreeNode node ,TreeNode x , TreeNode y){
+    private boolean isSibling(TreeNode node ,TreeNode x , TreeNode y){
         if(node==null){
             return false;
         }
